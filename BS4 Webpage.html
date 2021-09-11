@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 4</title>
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js" integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="BS4 Webpage.css">
+    <script type="text/javascript">
+        var replaceDigits = function() {
+            var map = ["&\#1776;", "&\#1777;", "&\#1778;", "&\#1779;", "&\#1780;", "&\#1781;", "&\#1782;", "&\#1783;", "&\#1784;", "&\#1785;"]
+            document.body.innerHTML = document.body.innerHTML.replace(/\d(?=[^<>]*(<|$))/g, function($0) {
+                return map[$0]
+            });
+        }
+        window.onload = replaceDigits;
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <div class="entrance">
+            <a class="entrance-link" href="#">
+                <img src="icn-shoppingbag.png" alt="shopping icon"> سبد خرید
+            </a>
+            <a class="entrance-link" href="#">
+                <img src="icn-user.png" alt="user icon">ورود | ثبت نام
+            </a>
+        </div>
+        <div class="logo" style="text-align: center;">
+            <img src="toto_log.png" alt="logo"><br>
+            <img src="logo.png" alt="logo">
+        </div>
+        <br>
+        <div class="row bg-light">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light">
+                <!-- Button Collapse navbar -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav" id="collapsibleNavbar">
+                        <!-- Dropdown -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                    خانه
+                  </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    منو
+                  </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">شماره 1</a>
+                                <a class="dropdown-item" href="#">شماره 2</a>
+                                <a class="dropdown-item" href="#">شماره 3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                    درباره ی ما
+                  </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="row bg-light">
+
+            <div class="col-lg-2">
+                <div id="accordion">
+                    <div class="card">
+                        <div>
+                            <button data-toggle="collapse" style="background-color: white; border:none; border-bottom: 1px solid beige; width: 100%; outline: none; text-align: right;" href="#collapseOne">
+                  مرتب سازی
+                    <span class="plus">+</span>
+                </button>
+                        </div>
+                        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                            <div class="card-body" style="text-align: right;">
+                                <p class="side-bar">ابی</p>
+                                <p class="side-bar">بنفش یاسی</p>
+                                <p class="side-bar">قهوه ایی سوخته</p>
+                                <p class="side-bar">قهوهایی</p>
+                                <p class="side-bar">زرد اکر</p>
+                                <p class="side-bar">سفید</p>
+                                <p class="side-bar">صورتی کمرنگ</p>
+                                <p class="side-bar">نسکافه ایی</p>
+                                <p class="side-bar">سبز</p>
+                                <p class="side-bar">خردلی</p>
+                                <p class="side-bar">قرمز</p>
+                                <p class="side-bar">بنفش</p>
+                                <p class="side-bar">صورتی</p>
+                                <p class="side-bar">طوسی روشن</p>
+                                <p class="side-bar">طوسی تیره</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <button data-toggle="collapse" style="background-color: white; border: none; border-bottom: 1px solid beige; width: 100%; outline: none; text-align: right;" href="#collapseTwo">
+                  دسته بندی
+                  <span class="plus">+</span>
+                </button>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                            <div class="card-body" style="text-align: right;">
+                                <p class="side-bar">ابی</p>
+                                <p class="side-bar">بنفش یاسی</p>
+                                <p class="side-bar">قهوه ایی سوخته</p>
+                                <p class="side-bar">قهوهایی</p>
+                                <p class="side-bar">زرد اکر</p>
+                                <p class="side-bar">سفید</p>
+                                <p class="side-bar">صورتی کمرنگ</p>
+                                <p class="side-bar">نسکافه ایی</p>
+                                <p class="side-bar">سبز</p>
+                                <p class="side-bar">خردلی</p>
+                                <p class="side-bar">قرمز</p>
+                                <p class="side-bar">بنفش</p>
+                                <p class="side-bar">صورتی</p>
+                                <p class="side-bar">طوسی روشن</p>
+                                <p class="side-bar">طوسی تیره</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <button data-toggle="collapse" style="background-color: white; border: none; border-bottom: 1px solid beige; width: 100%; outline: none; text-align: right;" href="#collapseThree">
+                   سایز
+                  <span class="plus">+</span>
+                </button>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-parent="#accordion">
+                            <div class="card-body" style="text-align: right;">
+                                <p class="side-bar">ابی</p>
+                                <p class="side-bar">بنفش یاسی</p>
+                                <p class="side-bar">قهوه ایی سوخته</p>
+                                <p class="side-bar">قهوهایی</p>
+                                <p class="side-bar">زرد اکر</p>
+                                <p class="side-bar">سفید</p>
+                                <p class="side-bar">صورتی کمرنگ</p>
+                                <p class="side-bar">نسکافه ایی</p>
+                                <p class="side-bar">سبز</p>
+                                <p class="side-bar">خردلی</p>
+                                <p class="side-bar">قرمز</p>
+                                <p class="side-bar">بنفش</p>
+                                <p class="side-bar">صورتی</p>
+                                <p class="side-bar">طوسی روشن</p>
+                                <p class="side-bar">طوسی تیره</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <button data-toggle="collapse" style="background-color: white; border: none; border-bottom: 1px solid beige; width: 100%; outline: none;text-align: right;" href="#collapseFour">
+                   رنگ
+                  <span class="plus">+</span>
+                </button>
+                        </div>
+                        <div id="collapseFour" class="collapse" data-parent="#accordion">
+                            <div class="card-body" style="text-align: right;">
+                                <p class="side-bar">ابی</p>
+                                <p class="side-bar">بنفش یاسی</p>
+                                <p class="side-bar">قهوه ایی سوخته</p>
+                                <p class="side-bar">قهوهایی</p>
+                                <p class="side-bar">زرد اکر</p>
+                                <p class="side-bar">سفید</p>
+                                <p class="side-bar">صورتی کمرنگ</p>
+                                <p class="side-bar">نسکافه ایی</p>
+                                <p class="side-bar">سبز</p>
+                                <p class="side-bar">خردلی</p>
+                                <p class="side-bar">قرمز</p>
+                                <p class="side-bar">بنفش</p>
+                                <p class="side-bar">صورتی</p>
+                                <p class="side-bar">طوسی روشن</p>
+                                <p class="side-bar">طوسی تیره</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="row">
+                    <div class="col col-lg-2 col-md-4 col-sm-6 col-6 card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="1.png" alt="Card image">
+                            <img class="off-tag" src="off_tag.png" alt="sale">
+                            <div class="dot-area">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark btn-block stretched-link">236,400 تومان</a>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-6 col-6 card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="1.png" alt="Card image">
+                            <div class="dot-area">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark btn-block stretched-link">236,400 تومان</a>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-6 col-6 card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="1.png" alt="Card image">
+                            <div class="dot-area">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark btn-block stretched-link">236,400 تومان</a>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-6 col-6 card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="1.png" alt="Card image">
+                            <div class="dot-area">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark btn-block stretched-link">236,400 تومان</a>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-6 col-6 card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="1.png" alt="Card image">
+                            <div class="dot-area">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark btn-block stretched-link">236,400 تومان</a>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-6 col-6 card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="1.png" alt="Card image">
+                            <div class="dot-area">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark btn-block stretched-link">236,400 تومان</a>
+                        </div>
+                    </div>
+
+                    <div class="col col-lg-2 col-md-4 col-sm-6 col-6 card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                            <div class="dot-area">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark btn-block stretched-link">236,400 تومان</a>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-6 col-6 card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                            <div class="dot-area">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark btn-block stretched-link">236,400 تومان</a>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-6 col-6 card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                            <div class="dot-area">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark btn-block stretched-link">236,400 تومان</a>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-6 col-6 card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                            <div class="dot-area">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark btn-block stretched-link">236,400 تومان</a>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-6 col-6 card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                            <div class="dot-area">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark btn-block stretched-link">236,400 تومان</a>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-6 col-6 card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                            <div class="dot-area">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark btn-block stretched-link">236,400 تومان</a>
+                        </div>
+                    </div>
+
+                    <div class="col col-lg-2 col-md-4 col-sm-6 col-6 card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                            <div class="dot-area">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark btn-block stretched-link">236,400 تومان</a>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-6 col-6 card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                            <div class="dot-area">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark btn-block stretched-link">236,400 تومان</a>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-6 col-6 card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                            <div class="dot-area">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark btn-block stretched-link">236,400 تومان</a>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-6 col-6 card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                            <div class="dot-area">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark btn-block stretched-link">236,400 تومان</a>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-6 col-6 card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                            <div class="dot-area">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark btn-block stretched-link">236,400 تومان</a>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-6 col-6 card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                            <div class="dot-area">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark btn-block stretched-link">236,400 تومان</a>
+                        </div>
+                    </div>
+
+                    <div class="col col-lg-2 col-md-4 col-sm-6 col-6 card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                            <div class="dot-area">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark btn-block stretched-link">236,400 تومان</a>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-6 col-6 card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                            <div class="dot-area">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark btn-block stretched-link">236,400 تومان</a>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-6 col-6 card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                            <div class="dot-area">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark btn-block stretched-link">236,400 تومان</a>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-6 col-6 card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                            <div class="dot-area">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark btn-block stretched-link">236,400 تومان</a>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-6 col-6 card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                            <div class="dot-area">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark btn-block stretched-link">236,400 تومان</a>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 col-md-4 col-sm-6 col-6 card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                            <div class="dot-area">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <a href="#" class="btn btn-outline-dark btn-block stretched-link">236,400 تومان</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

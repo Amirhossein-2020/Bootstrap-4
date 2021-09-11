@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'weblogmayekan';
+    src: url('../fonts/Weblogma_Yekan.eot');
+    src: url('../fonts/Weblogma_Yekan.eot#iefix') format('embedded-opentype'),
+         url('../fonts/Weblogma_Yekan.woff') format('woff'),
+         url('../fonts/Weblogma_Yekan.ttf') format('truetype'),
+         url('../fonts/Weblogma_Yekan.svg#CartoGothicStdBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    direction: rtl;
+    line-height: 1.5;
+    font-family: IRANSans !important;
+}
+.card-body {
+    padding: 10px;
+    margin: 0px;
+    background-color: white;
+    background-color: #f8f9fa;
+}
+.card {
+    padding: 0px;
+    margin: 0px;
+    border: hidden;
+}
+.side-bar {
+    border: 1px transparent white;
+    background-color: beige;
+    border: none;
+    padding-right: 5px;
+}
+.btn {
+    margin-top: 20px;
+}
+.dot {
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 6px 1px #888888;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 20px;
+    display: inline-block;
+}
+.dot-area {
+    text-align: center;
+}
+.nav-item {
+    text-align: right;
+}
+.entrance-link {
+    color: black;
+}
+.entrance-link:hover {
+    text-decoration: none;
+}
+.entrance {
+      text-align: right;
+}
+.plus {
+    display: block;
+    float: left;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.off-tag {
+    width: 50px; 
+    z-index: 1; 
+    position: absolute; 
+    left: 10px;
+    top: 10px;
+}
